@@ -19,3 +19,8 @@ jobs:
       - name: Lint
         run: |
           yarn lint
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: clock-weather-card.js
+          path: /home/runner/work/clock-weather-card/clock-weather-card/dist/clock-weather-card.js
